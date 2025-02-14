@@ -12,9 +12,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/predict", async (req, res) => {
-  const apiKey = "H2upbENPm5P5v-1oGXfTKRiponiUb3XvGTMAse7qEqE6"; // Replace with actual API key
-  const authUrl = "https://iam.cloud.ibm.com/identity/token";
-  const predictionUrl = "https://au-syd.ml.cloud.ibm.com/ml/v4/deployments/e53cbd08-90a2-4e05-b028-c251e1d4b82f/predictions?version=2021-05-01"; // Replace with actual prediction URL
+  const apiKey = "YOUR_API_KEY"; 
+  const authUrl = "YOUR_CLOUD_IDENTITY_TOKEN";
+  const predictionUrl = "YOUR_CLOUD_ENDPOINT"; 
 
   try {
     const authResponse = await axios.post(
