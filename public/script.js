@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchPredictionData() {
   try {
-    const response = await fetch('/predict');  // Ensure this endpoint returns the expected JSON response
+    const response = await fetch('/predict');  
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -17,7 +17,7 @@ async function fetchPredictionData() {
       const predictionValues = data.predictions[0].values;
 
       // Display the first prediction result (for example purposes)
-      const predictionData = predictionValues[0][0];  // Assuming the prediction is a binary outcome (0 or 1)
+      const predictionData = predictionValues[0][0];  
       document.getElementById('predictionResult').innerHTML = `
         <strong>Prediction Result:</strong> ${predictionData === 1 ? "Positive Outcome [1]" : "Negative Outcome [0]"}
       `;
