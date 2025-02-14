@@ -1,0 +1,19 @@
+{
+    "name": "dashboard-project",
+    "version": "1.0.0",
+    "description": "Node.js project with IBM Cloud API integration",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "axios": "^1.7.9",
+        "express": "^4.21.2",
+        "node-fetch": "^3.3.2",
+        "path": "^0.12.7",
+        "whatwg-url": "^14.1.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
